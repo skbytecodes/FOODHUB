@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'Cabin Condensed', sans-serif;
+	font-size: 16px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	color:white;
+    background-color: rgb(209, 61, 35);
+	position: sticky;
+	top: 0;
+}
+
+.logo {
+	flex: 1;
+	padding-left: 100px;
+}
+
+span{
+	 font-family: 'Dancing Script', cursive;
+	 font-size:22px;
+}
+
+p{
+	padding:5px;
+	font-weight:600;
+}
+p:hover{
+	background-color:white;
+	color:black;
+}
+.log-out {
+	flex: 1;
+	text-align: end;
+	padding-right: 100px;
+}
+
+.log-out a {
+	text-decoration: none;
+	padding: 10px;
+	color: white;
+	font-weight: 600;
+}
+
+.log-out a:hover {
+	background-color: white;
+	color: black;
+}
+
+.presentation {
+	display: flex;
+	justify-content: center;
+	background-color: rgb(8, 12, 66);
+	align-items: center;
+	height: 90vh;
+	padding-bottom: 8vh;
+}
+
+.formDiv {
+	background-color: #f1f1f1;
+	padding: 50px;
+	border-radius: 5px;
+}
+
+.heading {
+	text-align: center;
+}
+
+form {
+	margin-top: 30px;
+}
+
+form>input {
+	padding: 5px;
+	margin-bottom: 5px;
+	width: 400px;
+}
+
+#pname {
+	outline: none;
+	margin-left: 84px;
+}
+
+#pcost {
+	outline: none;
+	margin-left: 94px;
+}
+
+#pdesc {
+	outline: none;
+	margin-left: 52px;
+}
+
+#file {
+	outline: none;
+	margin-left: 78px;
+	width: 250px;
+}
+
+#submit {
+	outline: none;
+	margin-left: 170px;
+	margin-top: 40px;
+}
+
+form>select {
+	outline: none;
+	margin-left: 67px;
+	padding: 5px;
+	outline: none;
+}

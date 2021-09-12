@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+.login-container
+{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: block;
+    
+    
+    box-shadow:
+	  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+	  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+	  0 12.5px 10px rgba(0, 0, 0, 0.06),
+	  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+	  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+	  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+h1{
+    color:black;
+}
+p{
+    width: 250px;
+    text-align: center;
+}
+span{
+	 font-family: 'Dancing Script', cursive;
+	 font-size:22px;
+}
+.login-div
+{
+    border-radius: 5px;
+    padding: 30px;
+    text-align: center;
+}
+.form
+{
+    padding: 15px;
+}
+.form input
+{
+    padding-left: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+.login-btn
+{
+    cursor: pointer;
+    width: 180px;
+    padding: 5px;
+    background-color: #f0c14f;
+}
+.register-btn{
+    background-color: #f0c14f;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 270px;
+    padding: 5px;
+}
+
+.signup-container
+{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: none;
+
+    
+    box-shadow:
+	  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+	  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+	  0 12.5px 10px rgba(0, 0, 0, 0.06),
+	  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+	  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+	  0 100px 80px rgba(0, 0, 0, 0.12)
+}
+h1{
+    color:black;
+}
+p{
+    width: 280px;
+    text-align: center;
+}
+.signup-div
+{
+    padding: 30px;
+    text-align: center;
+}
+.register-form
+{
+    padding: 15px;
+
+}
+.register-form input
+{
+    padding-left: 10px;
+    height: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+.signup-btn
+{
+    cursor: pointer;
+    width: 180px;
+    padding: 5px;
+    background-color: #f0c14f;
+}
+.register-btn, #login{
+    background-color: #f0c14f;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 280px;
+    padding: 5px;
+}
+
+@media(max-width:500px){
+	
+	.form input{
+		margin-top:5px;
+		width:150px;
+	}
+	
+}

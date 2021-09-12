@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin Condensed', sans-serif;
+}
+.whole-container
+{
+    height: 100vh;
+    background: url(/FOODHUB/URLToReachResourcesFolder/images/background.jpg) no-repeat center center/cover;
+    max-width: 100%;
+}
+.navbar
+{
+    display: flex;
+    height: 10vh;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo
+{
+    margin-left: 100px;
+}
+.logo span
+{
+    color: black;
+    font-family: 'Dancing Script', cursive;
+    font-size: x-large;
+}
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px 25px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transition: transform 450ms;
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: black;color: white;}
+  .dropdown:hover .dropdown-content {display: block;}
+  
+.right-nav
+{
+    margin-right: 100px;
+    font-family: sans-serif;
+}
+.login
+{
+    color: black;
+    padding: 8px;
+    font-weight: 700;
+    border-radius: 10%;
+    text-decoration:none;
+}
+.login:hover
+{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+.last-container
+{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.comapny-name > img
+{
+	margin-top:45vh;
+    width: 500px;
+    height: 70px;
+    object-fit: contain;
+}
+@media(max-width:500px)
+{
+    .logo
+    {
+        margin-left: 20px;
+    }
+    .right-nav
+    {
+        margin-right: 20px;
+    }
+}

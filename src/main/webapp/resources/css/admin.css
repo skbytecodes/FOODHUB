@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-size: 16px;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+     color:white;
+    background-color: rgb(209, 61, 35);
+    position: sticky;
+    top: 0;
+}
+.logo{
+    flex: 1;
+    padding-left: 100px;
+}
+span{
+	 font-family: 'Dancing Script', cursive;
+	 font-size:22px;
+}
+nav{
+    justify-content: center;
+    text-align: center;
+}
+p{
+	padding:5px;
+	font-weight:600;
+}
+p:hover{
+	background-color:white;
+	color:black;
+}
+.log-out{
+    flex: 1;
+    text-align: end;
+    padding-right: 100px;
+}
+.log-out a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    border-radius : 3px;
+}
+.log-out a:hover{
+    background-color: orangered;
+    color: black;
+}
+
+.presentation{
+    height: 90vh;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+}
+.add{
+    text-decoration: none;
+    margin-left:135px;
+   
+    width: fit-content;
+    padding: 10px 10px;
+    font-weight: 600;
+    background-color: rgb(9, 9, 47);
+    color:white;
+}
+.add:hover{
+	background-color:orangered;
+}
+.items{
+    height: 80vh;
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 50px;
+    width: 80%;
+    margin: 2vh auto;
+    overflow-y: scroll;
+}
+table
+{
+    width: 100%;
+}
+
+table tr td
+{
+    text-align: center;
+    line-height: 40px;
+}
+table tr:nth-child(odd){
+    background-color: #e0dede;
+}
+#update a{
+    text-decoration: none; 
+    color: black;
+    padding: 7px;
+    margin: 3px 0px;
+    background-color: rgb(24, 24, 80);
+    color: white;
+    border-radius: 4px;
+    font-size:14px;
+}
+#delete a{
+	font-size:15px;
+    text-decoration: none; 
+    color: black;
+    padding: 7px;
+    margin: 3px 0px;
+    background-color: rgb(139, 42, 42);
+    color: white;
+    border-radius: 4px;
+}
+#update {
+    padding: 5px;
+}
+#delete {
+    padding: 5px;
+}

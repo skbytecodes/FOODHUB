@@ -1,0 +1,241 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Cabin Condensed', sans-serif;
+}
+
+.top-header {
+	z-index: 0;
+	height: 60vh;
+}
+
+.top-image {
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+}
+
+.all-products-container {
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.products-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 50px;
+	width: 90%;
+	margin: auto;
+}
+
+.product {
+	padding: 5px;
+	border-radius:5px;
+}
+
+.product:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px
+		-12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px
+		12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.product-image {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 10px;
+}
+
+.pdesc, .pcost {
+	font-size: 14px;
+}
+
+.product>p {
+	margin-left: 5px;
+}
+
+#cart-btn {
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	background-color: darkorange;
+	width: fit-content;
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	height: 10vh;
+	background-color:white;
+}
+
+.logo {
+	flex: 1;
+	font-size: 20px;
+	margin-left: 30px;
+}
+
+.logoname {
+	font-family: 'Dancing Script', cursive;
+	font-size: 22px;
+}
+
+ul {
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	list-style-type: none;
+}
+
+ul li {
+	padding: 15px;
+	font-weight: 600;
+}
+
+ul li a {
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+ul li a:hover {
+	background-color: black;
+	color: white;
+}
+
+.login-cart {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex: 1;
+	margin-right: 30px;
+}
+
+.login-cart a {
+	text-decoration: none;
+}
+
+.login {
+	border-radius: 5px;
+	font-weight: 600;
+	color: black;
+	padding: 10px;
+}
+
+.login:hover {
+	background-color: black;
+	color: white;
+}
+
+.cart {
+	width: 25px;
+	object-fit: contain;
+}
+
+.cart-container {
+	margin-left: 40px;
+}
+
+.menu-container {
+	display:none;
+    padding-top: 0px;
+	margin-left: 40px;
+}
+.menu{
+    width: 16px;
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: 0.5s;
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 22px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 60px;
+	right: 30px;
+	font-size: 40px;
+  }
+  
+
+
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+@media ( max-width :500px) {
+	.logo {
+		flex: 1;
+		margin-left: 20px;
+	}
+	.logoname {
+		font-family: 'Dancing Script', cursive;
+		font-size: 22px;
+	}
+	ul {
+		display: none;
+	}
+	.cart-container {
+		
+        display: none;
+	}
+    .menu-container {
+        display: block;
+    }
+	.products-container {
+		display: flex;
+		flex-direction: column;
+	}
+} 

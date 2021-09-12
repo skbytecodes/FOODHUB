@@ -1,0 +1,88 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Cabin Condensed', sans-serif;
+	background-color:green;
+	color:white;
+}
+p{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:20vh;
+	text-align:center;
+	color:white;
+	font-size:30px;
+}
+.conratsSpan{
+	color:red;
+	margin-right:5px;
+}
+.section {
+	margin-top: 3vh;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 40px;
+	border: 1px solid white;
+	border-radius: 10px;
+	box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px
+		rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 2 2.3px
+		17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0
+		100px 80px rgba(0, 0, 0, 0.12);
+}
+
+h3 {
+	margin-bottom: 20px;
+}
+
+.div1, .div2, .div3, .div4, .div5 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+span {
+	font-weight: 600;
+}
+
+h5 {
+	text-align: center;
+	margin-top: 1vh;
+}
+
+.homebtn{
+	background-color:white;
+	padding:5px;
+	color:black;
+	margin-left:300px;
+	text-decoration:none;
+	border-radius:2px;
+}
+
+.homebtn:hover{
+	transition:0.5s;
+	background-color:orange;
+	
+}
+
+@media ( max-width :360px) {
+	.section {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.div1, .div2, .div3, .div4, .div5 {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	p{
+		font-size:16px;
+	}
+}

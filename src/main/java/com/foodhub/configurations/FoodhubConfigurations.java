@@ -29,7 +29,7 @@ public class FoodhubConfigurations implements WebMvcConfigurer{
 
 	@PostConstruct
 	public void setup() {
-		Stripe.apiKey = "sk_test_51IsA2bSCpMsKWr4HtR52rXZwLtx42XzmBgNsLQN2Zcty1hnDoIbHwvm2uomSW8PqQetVBjTx7kv8KFu0k2KmWyQq00dUSvNWNs";
+		Stripe.apiKey = "Enter your stripe api key";
 	}
 	
 	
